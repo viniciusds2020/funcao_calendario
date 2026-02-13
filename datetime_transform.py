@@ -3,7 +3,7 @@
 Calendar transformation utilities.
 
 Builds a pandas DataFrame with rich date/time attributes for each day
-of a given year, including Brazil (BR) holidays for RJ and SP.
+of a given year, including Brazil (BR) holidays for RJ, SP, ES, MG, PR, SC e RS.
 """
 from __future__ import annotations
 
