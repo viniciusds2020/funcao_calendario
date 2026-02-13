@@ -11,7 +11,7 @@ Este repositório fornece uma função para gerar um `DataFrame` pandas com info
 Instalação:
 
 ```bash
-pip install pandas holidays
+pip install -r requirements.txt
 ```
 
 ## Uso
