@@ -1,6 +1,6 @@
 ﻿# Função de Transformação de Data e Hora
 
-Este repositório fornece uma função para gerar um `DataFrame` pandas com informações detalhadas de cada dia de um ano específico, incluindo calendário, sazonalidade, indicadores de progresso e feriados no Brasil (nacional + RJ + SP).
+Este repositório fornece uma função para gerar um `DataFrame` pandas com informações detalhadas de cada dia de um ano específico, incluindo calendário, sazonalidade, indicadores de progresso e feriados no Brasil (nacional + RJ, SP, MG, ES, RS, SC, PR).
 
 ## Requisitos
 
@@ -34,6 +34,7 @@ print(df.head())
 - Semana e mês: `numero_dia_semana`, `nome_dia_semana`, `semana_do_ano`, `semana_do_mes`
 - Mês e trimestre: `nome_mes`, `trimestre`, `semestre`
 - Limites: `inicio_mes`, `fim_mes`, `inicio_trimestre`, `fim_trimestre`, `inicio_ano`, `fim_ano`
+- Datas de limites: `inicio_mes_data`, `fim_mes_data`, `inicio_semana_data`, `fim_semana_data`
 - Progresso: `progresso_ano`, `progresso_mes`, `dias_desde_inicio_mes`, `dias_ate_fim_mes`, `dias_ate_fim_ano`
 - Estação (hemisfério sul): `estacao`
 - Feriados: `feriado_br`, `nome_feriado_br`, `feriado_rj`, `nome_feriado_rj`, `feriado_sp`, `nome_feriado_sp`, `feriado_mg`, `nome_feriado_mg`, `feriado_es`, `nome_feriado_es`, `feriado_rs`, `nome_feriado_rs`, `feriado_sc`, `nome_feriado_sc`, `feriado_pr`, `nome_feriado_pr`
@@ -43,4 +44,4 @@ print(df.head())
 ## Notas
 
 - Estações são aproximadas por datas fixas (hemisfério sul).
-- `is_business_day` considera apenas feriados nacionais e fins de semana.
+- `dia_util` considera apenas feriados nacionais e fins de semana.
